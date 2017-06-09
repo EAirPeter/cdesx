@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2017.1 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="20" Path="F:/hust/dlog/cdesx/cdesx/cdesx.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="06027f74eedb42bc861434634b35baa7"/>
+    <Option Name="Part" Val="xc7a100tcsg324-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="SimulatorLanguage" Val="Verilog"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="SourceMgmtMode" Val="DisplayOnly"/>
+    <Option Name="ActiveSimSet" Val="sim_top"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
+    <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="DSANumComputeUnits" Val="16"/>
+    <Option Name="WTXSimLaunchSim" Val="182"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="0"/>
+    <Option Name="WTModelSimExportSim" Val="0"/>
+    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTIesExportSim" Val="0"/>
+    <Option Name="WTVcsExportSim" Val="0"/>
+    <Option Name="WTRivieraExportSim" Val="0"/>
+    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="64"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../timer.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../debouncer.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../display.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../setting.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../power.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../divider.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../buzzer.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../run_mode.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../timer_nested.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../run_prog.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../leds.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../top.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../main.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../protector.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../button.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="top"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_top" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_top">
+      <File Path="$PPRDIR/../constr_top.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_top" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_top">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../test/tb_top.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../test/tb_top_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="tb_top"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../test/tb_top_behav.wcfg"/>
+        <Option Name="xsim.simulate.runtime" Val="900us"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_debouncer" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_debouncer">
+      <File Path="$PPRDIR/../test/tb_debouncer.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../test/tb_debouncer_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="tb_debouncer"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../test/tb_debouncer_behav.wcfg"/>
+        <Option Name="xsim.simulate.runtime" Val="200us"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_buzzer" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_buzzer">
+      <File Path="$PPRDIR/../test/tb_buzzer.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../test/tb_buzzer_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="tb_buzzer"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../test/tb_buzzer_behav.wcfg"/>
+        <Option Name="xsim.simulate.runtime" Val="280us"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_running" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_running">
+      <File Path="$PPRDIR/../test/tb_running.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../test/tb_running_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="tb_running"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../test/tb_running_behav.wcfg"/>
+        <Option Name="xsim.simulate.runtime" Val="2ms"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_setting" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_setting">
+      <File Path="$PPRDIR/../test/tb_setting.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../test/tb_setting_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="tb_setting"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../test/tb_setting_behav.wcfg"/>
+        <Option Name="xsim.simulate.runtime" Val="80us"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="10">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_top" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_top" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+  </Runs>
+</Project>

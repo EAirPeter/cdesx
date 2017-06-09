@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1926250000000fs"></ZoomStartTime>
+      <ZoomEndTime time="2014750000001fs"></ZoomEndTime>
+      <Cursor1Time time="2000000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="113"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="40" />
+   <wvobject fp_name="/tb_top/x_dut/buz" type="logic">
+      <obj_property name="ElementShortName">buz</obj_property>
+      <obj_property name="ObjectShortName">buz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/led_pwr" type="logic">
+      <obj_property name="ElementShortName">led_pwr</obj_property>
+      <obj_property name="ObjectShortName">led_pwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/led_lck" type="logic">
+      <obj_property name="ElementShortName">led_lck</obj_property>
+      <obj_property name="ObjectShortName">led_lck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/led_dry" type="logic">
+      <obj_property name="ElementShortName">led_dry</obj_property>
+      <obj_property name="ObjectShortName">led_dry</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/led_rin" type="logic">
+      <obj_property name="ElementShortName">led_rin</obj_property>
+      <obj_property name="ObjectShortName">led_rin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/led_was" type="logic">
+      <obj_property name="ElementShortName">led_was</obj_property>
+      <obj_property name="ObjectShortName">led_was</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/led_fil" type="logic">
+      <obj_property name="ElementShortName">led_fil</obj_property>
+      <obj_property name="ObjectShortName">led_fil</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/led_spi" type="logic">
+      <obj_property name="ElementShortName">led_spi</obj_property>
+      <obj_property name="ObjectShortName">led_spi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/led_dra" type="logic">
+      <obj_property name="ElementShortName">led_dra</obj_property>
+      <obj_property name="ObjectShortName">led_dra</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/seg_n" type="array">
+      <obj_property name="ElementShortName">seg_n[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_n[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/an_n" type="array">
+      <obj_property name="ElementShortName">an_n[7:0]</obj_property>
+      <obj_property name="ObjectShortName">an_n[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/a_mod" type="logic">
+      <obj_property name="ElementShortName">a_mod</obj_property>
+      <obj_property name="ObjectShortName">a_mod</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/a_run" type="logic">
+      <obj_property name="ElementShortName">a_run</obj_property>
+      <obj_property name="ObjectShortName">a_run</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/a_wat" type="logic">
+      <obj_property name="ElementShortName">a_wat</obj_property>
+      <obj_property name="ObjectShortName">a_wat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/a_pwr" type="logic">
+      <obj_property name="ElementShortName">a_pwr</obj_property>
+      <obj_property name="ObjectShortName">a_pwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/a_lck" type="logic">
+      <obj_property name="ElementShortName">a_lck</obj_property>
+      <obj_property name="ObjectShortName">a_lck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/ld_drw" type="array">
+      <obj_property name="ElementShortName">ld_drw[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ld_drw[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/fl_drw" type="array">
+      <obj_property name="ElementShortName">fl_drw[2:0]</obj_property>
+      <obj_property name="ObjectShortName">fl_drw[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/ld_fsd" type="array">
+      <obj_property name="ElementShortName">ld_fsd[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ld_fsd[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/u_tot" type="array">
+      <obj_property name="ElementShortName">u_tot[5:0]</obj_property>
+      <obj_property name="ObjectShortName">u_tot[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/u_cur" type="array">
+      <obj_property name="ElementShortName">u_cur[5:0]</obj_property>
+      <obj_property name="ObjectShortName">u_cur[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/u_wat" type="array">
+      <obj_property name="ElementShortName">u_wat[5:0]</obj_property>
+      <obj_property name="ObjectShortName">u_wat[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/main_done" type="logic">
+      <obj_property name="ElementShortName">main_done</obj_property>
+      <obj_property name="ObjectShortName">main_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/prog_done" type="logic">
+      <obj_property name="ElementShortName">prog_done</obj_property>
+      <obj_property name="ObjectShortName">prog_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/lock" type="logic">
+      <obj_property name="ElementShortName">lock</obj_property>
+      <obj_property name="ObjectShortName">lock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/tr_lock" type="logic">
+      <obj_property name="ElementShortName">tr_lock</obj_property>
+      <obj_property name="ObjectShortName">tr_lock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/tr_mod" type="logic">
+      <obj_property name="ElementShortName">tr_mod</obj_property>
+      <obj_property name="ObjectShortName">tr_mod</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/tr_run" type="logic">
+      <obj_property name="ElementShortName">tr_run</obj_property>
+      <obj_property name="ObjectShortName">tr_run</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/tr_wat" type="logic">
+      <obj_property name="ElementShortName">tr_wat</obj_property>
+      <obj_property name="ObjectShortName">tr_wat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/buz_tr_a" type="logic">
+      <obj_property name="ElementShortName">buz_tr_a</obj_property>
+      <obj_property name="ObjectShortName">buz_tr_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/buz_tr_b" type="logic">
+      <obj_property name="ElementShortName">buz_tr_b</obj_property>
+      <obj_property name="ObjectShortName">buz_tr_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/TIM_UNIT" type="array">
+      <obj_property name="ElementShortName">TIM_UNIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TIM_UNIT[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/END_WAIT" type="array">
+      <obj_property name="ElementShortName">END_WAIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">END_WAIT[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/DEB_WAIT" type="array">
+      <obj_property name="ElementShortName">DEB_WAIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DEB_WAIT[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/LCK_WAIT" type="array">
+      <obj_property name="ElementShortName">LCK_WAIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LCK_WAIT[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/BUZ_INTV" type="array">
+      <obj_property name="ElementShortName">BUZ_INTV[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BUZ_INTV[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/LED_INTV" type="array">
+      <obj_property name="ElementShortName">LED_INTV[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_INTV[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/DIS_INTV" type="array">
+      <obj_property name="ElementShortName">DIS_INTV[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DIS_INTV[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
