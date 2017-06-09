@@ -5,8 +5,8 @@
 module main(
     done, prog_done,
     ld_drw, fl_drw, ld_fsd,
-    u_tot, u_cur, u_wat,
-    tr_mod, tr_run, tr_wat,
+    u_tot, u_cur, u_wat, fl_disp,
+    tr_pwr, tr_mod, tr_run, tr_wat,
     clk, rst_n
 );
     parameter TIM_CMAX = `c_ms(1000);
@@ -15,7 +15,8 @@ module main(
     output [2:0] ld_drw, fl_drw;
     output [2:0] ld_fsd;
     output [5:0] u_tot, u_cur, u_wat;
-    input tr_mod, tr_run, tr_wat;
+    output fl_disp;
+    input tr_pwr, tr_mod, tr_run, tr_wat;
     input clk, rst_n;
 
     wire tr_set = tr_mod || tr_wat;
@@ -35,7 +36,7 @@ module main(
     wire ru_clr = !started;
     wire tm_done;
     wire tm_clr = st != 'b10;
-    assign done = st == 'b10 && tm_done;
+    assign done = rst_n && ((st == 'b10 && tm_done) || (!started && tr_pwr));
     // fwd prog_done
     assign ld_drw = started ? ru_ld_drw : se_ld_drw;
     assign fl_drw = started ? ru_fl_drw : 'b000;
@@ -43,6 +44,7 @@ module main(
     assign u_tot = started ? ru_u_tot : se_u_tot;
     assign u_cur = started ? ru_u_cur : se_u_cur;
     assign u_wat = se_u_wat;
+    assign fl_disp = ru_pau;
     always @(posedge clk, negedge rst_n)
         if (!rst_n)
             st <= 'b00;

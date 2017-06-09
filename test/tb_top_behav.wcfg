@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1926250000000fs"></ZoomStartTime>
-      <ZoomEndTime time="2014750000001fs"></ZoomEndTime>
-      <Cursor1Time time="2000000000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="893000000001fs"></ZoomEndTime>
+      <Cursor1Time time="685300000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="113"></NameColumnWidth>
+      <NameColumnWidth column_width="105"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="40" />
+   <WVObjectSize size="42" />
    <wvobject fp_name="/tb_top/x_dut/buz" type="logic">
       <obj_property name="ElementShortName">buz</obj_property>
       <obj_property name="ObjectShortName">buz</obj_property>
@@ -132,6 +132,10 @@
       <obj_property name="ElementShortName">rst_n</obj_property>
       <obj_property name="ObjectShortName">rst_n</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/tr_pwr" type="logic">
+      <obj_property name="ElementShortName">tr_pwr</obj_property>
+      <obj_property name="ObjectShortName">tr_pwr</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_top/x_dut/lock" type="logic">
       <obj_property name="ElementShortName">lock</obj_property>
       <obj_property name="ObjectShortName">lock</obj_property>
@@ -178,6 +182,11 @@
    <wvobject fp_name="/tb_top/x_dut/LCK_WAIT" type="array">
       <obj_property name="ElementShortName">LCK_WAIT[31:0]</obj_property>
       <obj_property name="ObjectShortName">LCK_WAIT[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/FPO_WAIT" type="array">
+      <obj_property name="ElementShortName">FPO_WAIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FPO_WAIT[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/x_dut/BUZ_INTV" type="array">

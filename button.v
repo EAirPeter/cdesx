@@ -18,7 +18,7 @@ module button(tr_btn, a_btn, lock, clk, rst_n);
             r_lock <= lock;
     debouncer #(
         .DEB_CMAX(DEB_CMAX)
-    ) x_deb(
+    ) x_deb_btn(
         .sig(),
         .pe_sig(pe_btn),
         .ne_sig(ne_btn),

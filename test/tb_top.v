@@ -17,37 +17,38 @@ module tb_top();
         `us(4)  a_wat = 1;
         `us(20) a_wat = 0;
         `us(6)  a_mod = 0;
-        @(!pwr);
+        `us(20) a_pwr = 1;
+        `us(30) a_pwr = 0;
         `us(50) `press(a_pwr);
-        repeat (3) `press(a_wat);
         `press(a_run);
         `us(40) `press(a_run);
-        `us(40) `press(a_run);
+        `us(10) `press(a_pwr);
+        `us(10) `press(a_run);
         `us(20) a_mod = 1;
         `us(4)  a_wat = 1;
         `us(12) a_mod = 0;
         `us(2)  a_wat = 0;
-        `press(a_run);
         `press(a_pwr);
+        `press(a_mod);
+        `press(a_run);
+        `press(a_wat);
         `us(20) a_mod = 1;
         `us(4)  a_wat = 1;
         `us(12) a_mod = 0;
         `us(4)  a_wat = 0;
         `press(a_run);
-        `press(a_mod);
-        `press(a_wat);
         `press(a_pwr);
-        @(!pwr);
-        `us(50)  `press(a_pwr);
-        `us(120) `press(a_pwr);
+        repeat (5) `press(a_mod);
+        `press(a_run);
     end
     top #(
         .TIM_UNIT(`c_us(10)),
         .END_WAIT(`c_us(100)),
         .DEB_WAIT(`c_cp(5)),
         .LCK_WAIT(`c_us(10)),
+        .FPO_WAIT(`c_us(20)),
         .BUZ_INTV(`c_us(1)),
-        .LED_INTV(`c_us(5)),
+        .FLA_INTV(`c_us(5)),
         .DIS_INTV(`c_cp(1))
     ) x_dut(
         .led_pwr(pwr),

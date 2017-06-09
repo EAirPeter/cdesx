@@ -2,19 +2,20 @@
 
 `include "h_cmax.v"
 
-module display(seg_n, an_n, u_tot, u_cur, u_wat, clk, rst_n);
+module display(seg_n, an_n, u_tot, u_cur, u_wat, fl_disp, clk_fl, clk, rst_n);
     parameter SCA_CMAX = `c_ms(1);
     output [7:0] seg_n, an_n;
     input [5:0] u_tot, u_cur, u_wat;
-    input clk, rst_n;
+    input fl_disp;
+    input clk_fl, clk, rst_n;
     
-    wire clk_div;
+    wire clk_sca;
     wire [3:0] mem[7:0];
     assign mem[3] = 'b1111;
     assign mem[2] = 'b1111;
     wire [2:0] pos;
     // fwd seg_n
-    assign an_n = ~(rst_n << pos);
+    assign an_n = ~((rst_n && (!fl_disp || clk_fl)) << pos);
     _disp_decimal x_dec_tot(
         .e1(mem[7]),
         .e0(mem[6]),
@@ -33,13 +34,13 @@ module display(seg_n, an_n, u_tot, u_cur, u_wat, clk, rst_n);
     divider #(
         .CMAX(SCA_CMAX)
     ) x_divider(
-        .clk_div(clk_div),
+        .clk_div(clk_sca),
         .clk(clk),
         .rst_n(rst_n)
     );
     _disp_counter8 x_counter(
         .cnt(pos),
-        .clk(clk_div),
+        .clk(clk_sca),
         .rst_n(rst_n)
     );
     _disp_pattern x_pattern(

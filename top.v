@@ -15,8 +15,9 @@ module top(
     parameter END_WAIT = `c_s(10);
     parameter DEB_WAIT = `c_ms(5);
     parameter LCK_WAIT = `c_ms(1000);
+    parameter FPO_WAIT = `c_ms(2000);
     parameter BUZ_INTV = `c_ms(100);
-    parameter LED_INTV = `c_ms(500);
+    parameter FLA_INTV = `c_ms(500);
     parameter DIS_INTV = `c_ms(1);
     output buz;
     output led_pwr, led_lck;
@@ -28,13 +29,15 @@ module top(
 
     wire a_lck = a_mod && a_wat;
 
+    wire clk_fl;
     wire [2:0] ld_drw, fl_drw, ld_fsd;
     wire [5:0] u_tot, u_cur, u_wat;
+    wire fl_disp;
     wire main_done, prog_done;
-    wire rst_n;
+    wire rst_n, tr_pwr;
     wire lock;
-    wire tr_lock, tr_mod, tr_run, tr_wat;
-    wire buz_tr_a = tr_lock || tr_mod || tr_run || tr_wat;
+    wire tr_lck, tr_mod, tr_run, tr_wat;
+    wire buz_tr_a = tr_lck || tr_mod || tr_run || tr_wat;
     wire buz_tr_b = prog_done;
     // fwd buz
     // fwd led_pwr
@@ -60,6 +63,8 @@ module top(
         .u_tot(u_tot),
         .u_cur(u_cur),
         .u_wat(u_wat),
+        .fl_disp(fl_disp),
+        .tr_pwr(tr_pwr),
         .tr_mod(tr_mod),
         .tr_run(tr_run),
         .tr_wat(tr_wat),
@@ -67,9 +72,11 @@ module top(
         .rst_n(rst_n)
     );
     power #(
+        .TIM_CMAX(FPO_WAIT),
         .DEB_CMAX(DEB_WAIT)
     ) x_power(
         .rst_n(rst_n),
+        .tr_pwr(tr_pwr),
         .led_pwr(led_pwr),
         .a_pwr(a_pwr),
         .main_done(main_done),
@@ -81,7 +88,7 @@ module top(
         .DEB_CMAX(DEB_WAIT)
     ) x_protector(
         .lock(lock),
-        .tr_lock(tr_lock),
+        .tr_lck(tr_lck),
         .led_lck(led_lck),
         .a_lck(a_lck),
         .clk(clk),
@@ -123,9 +130,14 @@ module top(
         .clk(clk),
         .rst_n(rst_n)
     );
-    leds #(
-        .FLA_CMAX(LED_INTV)
-    ) x_leds(
+    divider #(
+        .CMAX(FLA_INTV)
+    ) x_divider_fl(
+        .clk_div(clk_fl),
+        .clk(clk),
+        .rst_n(rst_n)
+    );
+    leds x_leds(
         .led_dry(led_dry),
         .led_rin(led_rin),
         .led_was(led_was),
@@ -135,7 +147,7 @@ module top(
         .ld_drw(ld_drw),
         .fl_drw(fl_drw),
         .ld_fsd(ld_fsd),
-        .clk(clk),
+        .clk_fl(clk_fl),
         .rst_n(rst_n)
     );
     display #(
@@ -146,6 +158,8 @@ module top(
         .u_tot(u_tot),
         .u_cur(u_cur),
         .u_wat(u_wat),
+        .fl_disp(fl_disp),
+        .clk_fl(clk_fl),
         .clk(clk),
         .rst_n(rst_n)
     );

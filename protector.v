@@ -2,11 +2,11 @@
 
 `include "h_cmax.v"
 
-module protector(lock, tr_lock, led_lck, a_lck, clk, rst_n);
+module protector(lock, tr_lck, led_lck, a_lck, clk, rst_n);
     parameter TIM_CMAX = `c_ms(1000);
     parameter DEB_CMAX = `c_ms(5);
     output reg lock = 'b0;
-    output tr_lock;
+    output tr_lck;
     output led_lck;
     input a_lck;
     input clk, rst_n;
@@ -16,7 +16,7 @@ module protector(lock, tr_lock, led_lck, a_lck, clk, rst_n);
     wire lck, pe_lck;
     wire tm_clr = !lck || r_lock != lock;
     // reg lock
-    assign tr_lock = tm_done;
+    assign tr_lck = tm_done;
     assign led_lck = lock;
     always @(posedge clk, negedge rst_n)
         if (!rst_n) begin
@@ -38,7 +38,7 @@ module protector(lock, tr_lock, led_lck, a_lck, clk, rst_n);
     );
     debouncer #(
         .DEB_CMAX(DEB_CMAX)
-    ) x_deb(
+    ) x_deb_lck(
         .sig(lck),
         .pe_sig(pe_lck),
         .ne_sig(),
