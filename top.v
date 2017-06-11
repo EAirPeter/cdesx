@@ -3,7 +3,7 @@
 `include "h_cmax.v"
 
 module top(
-    buz,
+    buz, ioh,
     led_pwr, led_lck,
     led_dry, led_rin, led_was,
     led_fil, led_spi, led_dra,
@@ -19,7 +19,7 @@ module top(
     parameter BUZ_INTV = `c_ms(100);
     parameter FLA_INTV = `c_ms(500);
     parameter DIS_INTV = `c_ms(1);
-    output buz;
+    output buz, ioh;
     output led_pwr, led_lck;
     output led_dry, led_rin, led_was;
     output led_fil, led_spi, led_dra;
@@ -57,6 +57,7 @@ module top(
     ) x_main(
         .done(main_done),
         .prog_done(prog_done),
+        .ioh(ioh),
         .ld_drw(ld_drw),
         .fl_drw(fl_drw),
         .ld_fsd(ld_fsd),

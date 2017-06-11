@@ -12,17 +12,21 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="893000000001fs"></ZoomEndTime>
-      <Cursor1Time time="685300000000fs"></Cursor1Time>
+      <ZoomEndTime time="897000000001fs"></ZoomEndTime>
+      <Cursor1Time time="332130000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="105"></NameColumnWidth>
+      <NameColumnWidth column_width="101"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="42" />
+   <WVObjectSize size="45" />
    <wvobject fp_name="/tb_top/x_dut/buz" type="logic">
       <obj_property name="ElementShortName">buz</obj_property>
       <obj_property name="ObjectShortName">buz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/ioh" type="logic">
+      <obj_property name="ElementShortName">ioh</obj_property>
+      <obj_property name="ObjectShortName">ioh</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/x_dut/led_pwr" type="logic">
       <obj_property name="ElementShortName">led_pwr</obj_property>
@@ -90,6 +94,10 @@
       <obj_property name="ElementShortName">a_lck</obj_property>
       <obj_property name="ObjectShortName">a_lck</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/clk_fl" type="logic">
+      <obj_property name="ElementShortName">clk_fl</obj_property>
+      <obj_property name="ObjectShortName">clk_fl</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_top/x_dut/ld_drw" type="array">
       <obj_property name="ElementShortName">ld_drw[2:0]</obj_property>
       <obj_property name="ObjectShortName">ld_drw[2:0]</obj_property>
@@ -120,6 +128,10 @@
       <obj_property name="ObjectShortName">u_wat[5:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/fl_disp" type="logic">
+      <obj_property name="ElementShortName">fl_disp</obj_property>
+      <obj_property name="ObjectShortName">fl_disp</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_top/x_dut/main_done" type="logic">
       <obj_property name="ElementShortName">main_done</obj_property>
       <obj_property name="ObjectShortName">main_done</obj_property>
@@ -140,9 +152,9 @@
       <obj_property name="ElementShortName">lock</obj_property>
       <obj_property name="ObjectShortName">lock</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/x_dut/tr_lock" type="logic">
-      <obj_property name="ElementShortName">tr_lock</obj_property>
-      <obj_property name="ObjectShortName">tr_lock</obj_property>
+   <wvobject fp_name="/tb_top/x_dut/tr_lck" type="logic">
+      <obj_property name="ElementShortName">tr_lck</obj_property>
+      <obj_property name="ObjectShortName">tr_lck</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/x_dut/tr_mod" type="logic">
       <obj_property name="ElementShortName">tr_mod</obj_property>
@@ -194,9 +206,9 @@
       <obj_property name="ObjectShortName">BUZ_INTV[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/x_dut/LED_INTV" type="array">
-      <obj_property name="ElementShortName">LED_INTV[31:0]</obj_property>
-      <obj_property name="ObjectShortName">LED_INTV[31:0]</obj_property>
+   <wvobject fp_name="/tb_top/x_dut/FLA_INTV" type="array">
+      <obj_property name="ElementShortName">FLA_INTV[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FLA_INTV[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/x_dut/DIS_INTV" type="array">
