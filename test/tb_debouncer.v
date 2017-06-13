@@ -4,17 +4,15 @@ module tb_debouncer();
 `include "tb_h_common.v"
     reg a_sig = 'b0;
     initial begin
-        `us(10)   a_sig = 1;
-        `us(7)    a_sig = 0;
-        `us(12)   a_sig = 1;
-        `us(43)   a_sig = 0;
-        `us(9.9)  a_sig = 1;
-        `us(72)   a_sig = 0;
-        `us(10.1) a_sig = 1;
-        `us(10.1) a_sig = 0;
+        `cp(1.3)  a_sig = 1;
+        `cp(10.1) a_sig = 0;
+        `cp(9.9)  a_sig = 1;
+        `cp(2.8)  a_sig = 0;
+        `cp(10.1) a_sig = 1;
+        `cp(9.9)  a_sig = 0;
     end
     debouncer #(
-        .DEB_CMAX(`c_us(10))
+        .DEB_CMAX(`c_cp(10))
     ) x_dut(
         .a_sig(a_sig),
         .clk(clk),

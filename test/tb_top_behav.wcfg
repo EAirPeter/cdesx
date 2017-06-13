@@ -12,18 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="897000000001fs"></ZoomEndTime>
-      <Cursor1Time time="332130000000fs"></Cursor1Time>
+      <ZoomEndTime time="901000000001fs"></ZoomEndTime>
+      <Cursor1Time time="720000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="101"></NameColumnWidth>
+      <NameColumnWidth column_width="97"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="45" />
-   <wvobject fp_name="/tb_top/x_dut/buz" type="logic">
-      <obj_property name="ElementShortName">buz</obj_property>
-      <obj_property name="ObjectShortName">buz</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_top/x_dut/ioh" type="logic">
       <obj_property name="ElementShortName">ioh</obj_property>
       <obj_property name="ObjectShortName">ioh</obj_property>
@@ -60,16 +56,6 @@
       <obj_property name="ElementShortName">led_dra</obj_property>
       <obj_property name="ObjectShortName">led_dra</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/x_dut/seg_n" type="array">
-      <obj_property name="ElementShortName">seg_n[7:0]</obj_property>
-      <obj_property name="ObjectShortName">seg_n[7:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_top/x_dut/an_n" type="array">
-      <obj_property name="ElementShortName">an_n[7:0]</obj_property>
-      <obj_property name="ObjectShortName">an_n[7:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_top/x_dut/a_mod" type="logic">
       <obj_property name="ElementShortName">a_mod</obj_property>
       <obj_property name="ObjectShortName">a_mod</obj_property>
@@ -89,6 +75,21 @@
    <wvobject fp_name="/tb_top/x_dut/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/u_tot" type="array">
+      <obj_property name="ElementShortName">u_tot[5:0]</obj_property>
+      <obj_property name="ObjectShortName">u_tot[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/u_cur" type="array">
+      <obj_property name="ElementShortName">u_cur[5:0]</obj_property>
+      <obj_property name="ObjectShortName">u_cur[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/u_wat" type="array">
+      <obj_property name="ElementShortName">u_wat[5:0]</obj_property>
+      <obj_property name="ObjectShortName">u_wat[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/x_dut/a_lck" type="logic">
       <obj_property name="ElementShortName">a_lck</obj_property>
@@ -112,21 +113,6 @@
       <obj_property name="ElementShortName">ld_fsd[2:0]</obj_property>
       <obj_property name="ObjectShortName">ld_fsd[2:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_top/x_dut/u_tot" type="array">
-      <obj_property name="ElementShortName">u_tot[5:0]</obj_property>
-      <obj_property name="ObjectShortName">u_tot[5:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_top/x_dut/u_cur" type="array">
-      <obj_property name="ElementShortName">u_cur[5:0]</obj_property>
-      <obj_property name="ObjectShortName">u_cur[5:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_top/x_dut/u_wat" type="array">
-      <obj_property name="ElementShortName">u_wat[5:0]</obj_property>
-      <obj_property name="ObjectShortName">u_wat[5:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/x_dut/fl_disp" type="logic">
       <obj_property name="ElementShortName">fl_disp</obj_property>
@@ -175,6 +161,20 @@
    <wvobject fp_name="/tb_top/x_dut/buz_tr_b" type="logic">
       <obj_property name="ElementShortName">buz_tr_b</obj_property>
       <obj_property name="ObjectShortName">buz_tr_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/buz" type="logic">
+      <obj_property name="ElementShortName">buz</obj_property>
+      <obj_property name="ObjectShortName">buz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/seg_n" type="array">
+      <obj_property name="ElementShortName">seg_n[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_n[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/x_dut/an_n" type="array">
+      <obj_property name="ElementShortName">an_n[7:0]</obj_property>
+      <obj_property name="ObjectShortName">an_n[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/x_dut/TIM_UNIT" type="array">
       <obj_property name="ElementShortName">TIM_UNIT[31:0]</obj_property>

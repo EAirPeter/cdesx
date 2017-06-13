@@ -7,9 +7,10 @@ module tb_buzzer();
     reg a_b = 0;
     initial begin
         `press(a_a);
-        `us(10) `press(a_b);
+        `us(10)  `press(a_b);
+        `us(4.7) `press(a_a);
         `us(120) `press(a_b);
-        `us(8) `press(a_a);
+        `us(12)  `press(a_a);
     end
     wire tr_a, tr_b;
     buzzer #(
